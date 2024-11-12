@@ -5,7 +5,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 @app.route(route="http_trigger1")
 def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Hello world!')
+    logging.info('Hello wor123ld!')
 
     name = req.params.get('name')
     if not name:
